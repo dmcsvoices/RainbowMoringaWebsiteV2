@@ -13,9 +13,7 @@ function App() {
 
     <div className="App">
       <Header />
-        <ArticleTitle titleText="Where can I get locally sourced Moringa?"/>
         <ArticleText_whereToBuy />
-        <ArticleTitle titleText="Rainbow Moringa - Your neighborhood Moringa grower"/>
         <ArticleText_NeighborhoodGrower />
       <Footer />
     </div>

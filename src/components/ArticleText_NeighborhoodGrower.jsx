@@ -1,11 +1,13 @@
 import React from 'react';
+
+import ArticleTitle from './ArticleTitle';
 import styled from 'styled-components';
 
 const P = styled.p``;
 
 
 const articleSection = styled.div`
-background-color: #FE4A49;
+background-color: rgb(254, 74, 73)!important;
 border-style: dotted;
 margin: 10px 10px 5px;
 padding-left: 100px;
@@ -17,17 +19,6 @@ flex-direction: row;
 justify-content: flex-start;
 align-items: center;
 `;
-
-const H2 = styled.h2`
-color: rgb(28, 17, 10);
-font-family: Lusitana;
-font-size: 25px;
-margin: 10px 30px 10px;
-display: flex;
-flex-direction: row;
-justify-content: flex-start;
-`;
-
 
 const Ul = styled.ul`
 display: flex;
@@ -54,17 +45,18 @@ margin: 4px;
 padding: 4px;   
 border-color: rgb(0, 95, 115);
 border-style:solid;
-border-radius: 10px; `;
+border-radius: 10px; 
+word-break: break-word;
+white-space: normal;`;
 
 
 const Button = styled.button``;
 
 function ArticleText_NeighborhoodGrower() {
   return (
-    <articleSection className="card">
-
-        <H2 className="card-title">Every neighborhood needs a Moringa grower </H2>
-        <P className="card-body">
+    <articleSection className="container">
+        <ArticleTitle titleText="Every neighborhood needs a Moringa grower" />        
+        <P className="card-text">
             <Ul className = "list-group">
                 <Li className="list-group-item">Having a Moringa grower in every neighborhood means that everyone in the neighborhood will have access to high quality nutrition with minimal environmental impact.</Li>
                 <Li className="list-group-item">A small Moringa garden can produce enough to share with a small community.</Li>
