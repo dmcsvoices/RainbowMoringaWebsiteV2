@@ -6,7 +6,7 @@ function Header() {
   return (
     <div>
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo"/><p>This space to contain Header Rainbow Moringa content.</p>
+        <img src={logo} className="App-logo" alt="logo"/>
       </header>
     </div>
   )

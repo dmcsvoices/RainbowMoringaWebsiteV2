@@ -44,7 +44,7 @@ align-items: center;
 margin: 4px;
 padding: 4px;   
 border-color: rgb(0, 95, 115);
-border-style:solid;
+border-style:dotted;
 border-radius: 10px; 
 word-break: break-word;
 white-space: normal;`;

@@ -6,6 +6,7 @@ import Footer from './components/Footer';
 import ArticleTitle from './components/ArticleTitle';
 import ArticleText_whereToBuy from './components/ArticleText_whereToBuy';
 import ArticleText_NeighborhoodGrower from './components/ArticleText_NeighborhoodGrower';
+import ArticleText_moringaComparison from './components/ArticleText_moringaComparison';
 
 function App() {
   
@@ -15,6 +16,7 @@ function App() {
       <Header />
         <ArticleText_whereToBuy />
         <ArticleText_NeighborhoodGrower />
+        <ArticleText_moringaComparison />
       <Footer />
     </div>
 
