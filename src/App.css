@@ -1,7 +1,7 @@
 
 
 .App {
-  text-align: center;
+  text-align: left;
   min-height: 400vh;
   background-image: linear-gradient(to bottom right, rgb(11, 174, 45), rgb(229, 236, 233));
 }
@@ -40,4 +40,32 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+
+.mainBox {
+  background-color: red;
+  display: flex;
+  flex-direction: column;
+}
+
+.vertNav {
+  background-color: red;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  margin-top: 6vw;;
+  padding: 5px;
+
+}
+
+.articleBox {
+  background-color: blue;
+  display: flex;
+  flex-direction: row;
+}
+
+.navIcon {
+  margin-top: 10px;;
+  padding: 5px;
 }
