@@ -1,5 +1,5 @@
 import { library } from "@fortawesome/fontawesome-svg-core";
-import { fab } from "@fortawesome/free-brands-svg-icons";
+import { fab, faLinkedin, faLinkedinIn, faFacebook } from "@fortawesome/free-brands-svg-icons";
 import { faCheckSquare, faCoffee, faLeaf, faCannabis, faSeedling } from "@fortawesome/free-solid-svg-icons";
 import logo from './logo.svg';
 import './App.css';
@@ -11,7 +11,7 @@ import ArticleText_whereToBuy from './components/ArticleText_whereToBuy';
 import ArticleText_NeighborhoodGrower from './components/ArticleText_NeighborhoodGrower';
 import ArticleText_moringaComparison from './components/ArticleText_moringaComparison';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-library.add(fab, faCheckSquare, faCoffee,  faLeaf, faCannabis, faSeedling);
+library.add(fab, faLeaf, faCannabis, faSeedling, faLinkedin,faLinkedinIn, faFacebook);
 
 function App() {
   
@@ -23,15 +23,14 @@ function App() {
       <div className="articleBox">
       <div className="vertNav">
         <FontAwesomeIcon className="navIcon" icon="fa-solid fa-seedling" size="3x" />
-        <FontAwesomeIcon icon="fa-solid fa-leaf" size="3x"/></div>
+        <FontAwesomeIcon className="navIcon" icon="fa-solid fa-cannabis" size="3x"/>
+        <FontAwesomeIcon className="navIcon" icon="fa-solid fa-leaf" size="3x"/>
+      </div>
       <div className="App">
-          
             <ArticleText_whereToBuy />
             <ArticleText_NeighborhoodGrower />
             <ArticleText_moringaComparison />
-          
         </div>
-        
       </div>
       <Footer />
     </div>
