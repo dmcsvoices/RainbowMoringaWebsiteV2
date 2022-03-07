@@ -24,11 +24,10 @@ align-items: center;
 function Footer() {
   return (
     <Div>
-
         <nav id="nav-footer">      
             <a href="#"><FontAwesomeIcon className="navIcon" icon="fa-solid fa-seedling" size="3x" /></a>
-            <a href="#"> <FontAwesomeIcon icon="fa-solid fa-leaf" size="3x"/></a>
-            <a href="#"> <FontAwesomeIcon icon="fa-solid fa-cannabis" size="3x"/></a>
+            <a href="#"><FontAwesomeIcon icon="fa-solid fa-leaf" size="3x"/></a>
+            <a href="#"><FontAwesomeIcon icon="fa-solid fa-cannabis" size="3x"/></a>
         </nav>
         <P>Copyright &copy; 2022 Darren Santos</P>
     </Div>
