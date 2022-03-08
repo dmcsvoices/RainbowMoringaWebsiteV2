@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import ArticleTitle from './ArticleTitle';
 import { library } from "@fortawesome/fontawesome-svg-core";
 import { fab } from "@fortawesome/free-brands-svg-icons";
@@ -8,7 +8,9 @@ import styled from 'styled-components';
 
 library.add(fab, faLeaf, faCannabis, faSeedling);
 
-
+const Input = styled.input`
+margin-bottom:10px;
+`;
 
 const Section = styled.div`
     visibility: visible;
@@ -31,32 +33,71 @@ border-color: rgb(0, 95, 115);
 border-radius: 10px; 
 border-style: none;`;
 
+const P = styled.p`
+display: flex;
+flex-direction: column;
+justify-content: flex-start;
+padding: 10px;
+margin-left: 40px;
+margin-right: 40px;
+margin-bottom:20px;
+box-shadow: 2px 2px 7px rgb(22, 7, 7);
+background-color: rgb(236, 248, 248);
+border-color: rgb(0, 95, 115);
+border-radius: 10px; 
+border-style: none;`;
+
+const FORM_ENDPOINT = ""; // TODO - fill on the later step
 
 function ContactForm() {
+
+    const [submitted, setSubmitted] = useState(false);
+    const handleSubmit = () => {
+      setTimeout(() => {
+        setSubmitted(true);
+      }, 100);
+    };
+  
+    if (submitted) {
+      return (
+        <>
+          <div className="text-2xl">Thank you!</div>
+          <div className="text-md">We'll be in touch soon.</div>
+        </>
+      );
+    }
+
   return (
     <Section className="form-section">
-        <ArticleTitle titleText="Southern California Moringa is a seasonal product. Therefore stock is limited. Please use the form  below to express your interest in obtaining fresh Moringa. We will get back to you immediately!" />
-        <p> 
-            
-            <Form className="contact-form" id="form-WantToBuy">
-            <div className="form-group">
+        <ArticleTitle titleText="Buy directly from the grower" />
+        <P> 
+        Southern California Moringa is a seasonal product. Therefore stock is limited. Please use the form  below to express your interest in obtaining fresh Moringa. We will get back to you immediately!
+        </P>
+            <Form 
+                className="contact-form"   
+                id="form-WantToBuy" 
+                action={FORM_ENDPOINT}
+                onSubmit={handleSubmit}
+                method="POST"
+                target="_blank"
+            >
+            <Section className="form-group">
                 <label for="fname">First name:</label>
-                <input type="text" id="fname" name="fname"></input>
+                <Input type="text" className="form-control" id="fname" name="fname"></Input>
                 <label for="lname">Last name:</label>
-                <input type="text" id="lname" name="lname"></input>
-            </div> 
-            <div className="form-group">
+                <Input type="text" className="form-control"  id="lname" name="lname"></Input>
+            
                 
                 <label for="phonenum">Phone Number:</label>
-                <input type="text" id="phonenum" name="phonenum"></input>
+                <Input type="text" className="form-control" id="phonenum" name="phonenum"></Input>
                 <label for="emailaddr">Email Address:</label>
-                <input type="text" id="emailaddr" name="emailaddr"></input>
-               
-            </div>   
-            <input type="submit" value="Submit"></input>
+                <Input type="email" className="form-control" id="emailaddr" name="emailaddr"></Input>
+            
+            <button type="submit" value="Submit" className="btn btn-primary btn-lg">Press here to send us a message!</button>
+            </Section>
             </Form>
             
-        </p>
+        
     </Section>
    
 

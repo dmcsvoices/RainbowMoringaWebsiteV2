@@ -1,4 +1,6 @@
-
+input {
+  margin: 5px;
+}
 
 .App {
   text-align: left;
