@@ -6,21 +6,33 @@ import '../App.css';
 import styled from 'styled-components';
 
 const Div = styled.div`
-display: flex;
-flex-direction: row;
-justify-content: space-evenly;
-align-items: flex-end; 
+  background-color: rgb(11, 174, 45);
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center; 
+`;
+
+const Div2 = styled.div`
+  padding: 1px;
+  background-color: rgb(46, 163, 0);
+  display: flex;
+  flex-direction: row;
+  justify-content: center; 
 `;
 
 function Header() {
   return (
+    <>
     <Div>
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo"/>
-      </header>
+      <header className="App-header"><img src={logo} className="App-logo" alt="logo"/></header><h3>Southern California Grown Moringa Oleifera</h3>
+    </Div> 
+    <Div2> 
       <HorzNav />
+    </Div2>
+  </>  
+    
 
-    </Div>
   )
 }
 

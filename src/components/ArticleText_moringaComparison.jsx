@@ -1,6 +1,12 @@
 import React from 'react'
 import ArticleTitle from './ArticleTitle';
 import styled from 'styled-components';
+import { library } from "@fortawesome/fontawesome-svg-core";
+import { faCarrot, faDna, faMugHot, faAppleWhole, faFish} from "@fortawesome/free-solid-svg-icons";
+
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+library.add(faCarrot, faDna, faMugHot, faAppleWhole, faFish
+   );
 
 const P = styled.p`
 display: flex;
@@ -69,11 +75,11 @@ function ArticleText_moringaComparison() {
     <ArticleTitle titleText="How does Moringa compare to other supplements?" />        
         <P>The scientific community has spoken! Moringa Oliferia has been studied in laboratories worldwide. It's usefulness and benefits offered are well documented. The following list shows how Moringa stacks up against various well known foods. Gram for gram of fresh Moringa:</P>
                     <Ul>
-                        <Li>has Six times more Vitamin C than orange</Li>
-                        <Li>is equal to Three Bananas</Li>
-                        <Li>has three times the Protien that spinach has, and double the number of carbohydates</Li>
-                        <Li>can be consumed as a tea, in cold beverages, or consumed in tablets or capsules</Li>
-                        <Li>is nutrutionally dense and can replace other forms of produce that may not be readily available or out of season</Li>
+                        <Li><FontAwesomeIcon icon="fa-solid fa-carrot"  size="2x"/> has Six times more Vitamin C than orange</Li>
+                        <Li><FontAwesomeIcon icon="fa-solid fa-dna"  size="2x"/> is equal to Three Bananas</Li>
+                        <Li><FontAwesomeIcon icon="fa-solid fa-fish"  size="2x"/> has three times the Protien that spinach has, and double the number of carbohydates</Li>
+                        <Li><FontAwesomeIcon icon="fa-solid fa-mug-hot"  size="2x"/> can be consumed as a tea, in cold beverages, or consumed in tablets or capsules</Li>
+                        <Li><FontAwesomeIcon icon="fa-solid fa-apple-whole"  size="2x"/> is nutrutionally dense and can replace other forms of produce that may not be readily available or out of season</Li>
                     </Ul>
                     <P>And if you still need proof, here are links to some scientific studies</P>
                     <Ul>

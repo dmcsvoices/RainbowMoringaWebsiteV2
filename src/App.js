@@ -10,7 +10,7 @@ import ArticleTitle from './components/ArticleTitle';
 import ArticleText_whereToBuy from './components/ArticleText_whereToBuy';
 import ArticleText_NeighborhoodGrower from './components/ArticleText_NeighborhoodGrower';
 import ArticleText_moringaComparison from './components/ArticleText_moringaComparison';
-
+import ContactForm from './components/ContactForm'
 
 function App() {
   
@@ -26,6 +26,7 @@ function App() {
             <ArticleText_whereToBuy />
             <ArticleText_NeighborhoodGrower />
             <ArticleText_moringaComparison />
+            <ContactForm />
         </div>
       </div>
       <Footer />
