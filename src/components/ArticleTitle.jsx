@@ -14,7 +14,7 @@ justify-content: flex-start;
 function ArticleTitle(props) {
   return (
     
-    <Title className='container'>
+    <Title className='card-title'>
     
       {props.titleText}
     
